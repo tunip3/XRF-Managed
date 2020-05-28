@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "XboxResearchFramework_Sample": {
+      "commandName": "Project",
+      "remoteDebugEnabled": true,
+      "remoteDebugMachine": "XBOXONE",
+      "authenticationMode": "None"
+    }
+  }
+}

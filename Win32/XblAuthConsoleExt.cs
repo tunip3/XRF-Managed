@@ -15,5 +15,11 @@ namespace XboxResearchFramework.Win32
         internal static extern bool XblaGetConsoleId(out IntPtr ConsoleIDPtr);
         [DllImport("XblAuthConsoleExt.dll", SetLastError = true)]
         internal static extern void XblaInitialize();
+
+        [DllImport("XblAuthConsoleExt.dll", SetLastError = true)]
+        internal static extern void XblaGetEraProxyPid(out short PID);
+
+        [DllImport("XblAuthConsoleExt.dll", SetLastError = true)]
+        internal static extern void XblaGetConsoleCert(out IntPtr CertificatePtr);
     }
 }

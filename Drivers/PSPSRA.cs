@@ -7,7 +7,7 @@ using static XboxResearchFramework.Utilities.Converters;
 
 namespace XboxResearchFramework.Drivers
 {
-    public class PSPSRA
+    internal class PSPSRA
     {
         internal static readonly string DEVICE_NAME_PSPSRA = @"\\.\pspsra";
         internal static readonly uint IOCTL_PSP_CONSOLE_SERIAL = 0x221028;

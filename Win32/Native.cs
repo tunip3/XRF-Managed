@@ -30,11 +30,6 @@ namespace XboxResearchFramework.Win32
         [DllImport("kernelbase.dll", ExactSpelling = true, SetLastError = true, CharSet = CharSet.Auto)]
         internal static extern bool DeviceIoControl(IntPtr hDevice, uint dwIoControlCode, IntPtr lpInBuffer, uint nInBufferSize, out IntPtr lpOutBuffer, uint nOutBufferSize, out uint lpBytesReturned, IntPtr lpOverlapped);
 
-        [DllImport("XblAuthConsoleExt.dll", SetLastError = true)]
-        internal static extern bool XblaGetConsoleSerialNumber(out string Serial);
-        [DllImport("XblAuthConsoleExt.dll", SetLastError = true)]
-        internal static extern bool XblaGetConsoleId(out string ConsoleID);
-
 
     }
 }
